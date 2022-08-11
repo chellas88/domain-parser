@@ -3,13 +3,21 @@
         "server": "whois.verisign-grs.com",
         "not_found": "No match for "
     },
+    "com.ua": {
+        "server": "whois.ua",
+        "not_found": "No entries found for"
+    },
+    "in.ua": {
+        "server": "whois.ua",
+        "not_found": "No entries found for"
+    },
     "net": {
         "server": "whois.verisign-grs.com",
         "not_found": "No match for "
     },
     "org": {
         "server": "whois.pir.org",
-        "not_found": "NOT FOUND"
+        "not_found": "Domain not found."
     },
     "io": {
         "server": "whois.nic.io",
@@ -21,14 +29,10 @@
     },
     "ac": {
         "server": "whois.nic.ac",
-        "not_found": "is available for purchase"
+        "not_found": "Domain not found."
     },
     "academy": {
         "server": "whois.donuts.co",
-        "not_found": "Domain not found."
-    },
-    "actor": {
-        "server": "whois.unitedtld.com",
         "not_found": "Domain not found."
     },
     "ae": {
@@ -52,16 +56,12 @@
         "not_found": "Domain not found."
     },
     "ai": {
-        "server": "whois.ai",
-        "not_found": "If you would like to register this,\r\n         or any .ai domain"
+        "server": "whois.nic.ai",
+        "not_found": "No Object Found"
     },
     "am": {
         "server": "whois.amnic.net",
         "not_found": "No match"
-    },
-    "archi": {
-        "server": "whois.ksregistry.net",
-        "not_found": "not found..."
     },
     "arpa": {
         "server": "whois.iana.org",
@@ -69,7 +69,7 @@
     },
     "as": {
         "server": "whois.nic.as",
-        "not_found": "Domain Status: Available"
+        "not_found": "NOT FOUND"
     },
     "asia": {
         "server": "whois.nic.asia",
@@ -85,7 +85,7 @@
     },
     "au": {
         "server": "whois.audns.net.au",
-        "not_found": "No Data Found"
+        "not_found": "NOT FOUND"
     },
     "aw": {
         "server": "whois.nic.aw",
@@ -93,7 +93,7 @@
     },
     "ax": {
         "server": "whois.ax",
-        "not_found": "No records matching "
+        "not_found": "Domain not found"
     },
     "az": {
         "server": "whois.az",
@@ -149,7 +149,7 @@
     },
     "build": {
         "server": "whois.nic.build",
-        "not_found": "No Data Found"
+        "not_found": "DOMAIN NOT FOUND"
     },
     "builders": {
         "server": "whois.donuts.co",
@@ -1249,7 +1249,7 @@
     },
     "blue": {
         "server": "whois.afilias.net",
-        "not_found": "NOT FOUND"
+        "not_found": "Domain not found."
     },
     "info": {
         "server": "whois.afilias.net",

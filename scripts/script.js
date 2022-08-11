@@ -2,10 +2,8 @@ window.domains       = [];
 window.domainsError  = [];
 window.domainsLength = 0;
 window.isPaused      = false;
-
 $('form#availability-form').submit(function(e) {
     e.preventDefault();
-
     domains = [];
     domainsLength = 0;
     isPaused   = false;
@@ -15,7 +13,6 @@ $('form#availability-form').submit(function(e) {
 
     var tmpDomains = $('textarea[name="domains"]').val().replace(/\n/g, " ").split(" ");
     var tlds = $('select[name="tlds"]').val();
-
     // trim all values
     $.map(tmpDomains, $.trim);
 
@@ -26,7 +23,6 @@ $('form#availability-form').submit(function(e) {
 
     // generate domains with tld
     $.each(tmpDomains, function(kdomain, domain) {
-
         $.each(tlds, function(ktld, tld) {
             if (isValidDomain(domain)) {
                 window.domains.push(domain);
@@ -41,7 +37,6 @@ $('form#availability-form').submit(function(e) {
             }
         });
     });
-
     // combine without separator
     if ($('input[name=combine][value=1]:checked').length) {
         $.each(tmpDomains, function(kdomain, domain) {
@@ -103,6 +98,7 @@ $(document).on('click', '.close-whois', function(e) {
     $(this).closest('tr').remove();
 });
 
+//open whois
 $(document).on('click', '[data-whois]', function(e) {
     e.preventDefault();
     var whoisElem = $(this);
@@ -118,6 +114,7 @@ $(document).on('click', '[data-whois]', function(e) {
         type: "post",
         data: "domain=" + $(this).data('whois') + '&whois=1',
         success: function(res) {
+            console.log(res)
             $('<tr class="result-whois"><td colspan="9">' + close + res.data.whois_data.replace(new RegExp('\r?\n','g'), '<br />') + '</td></tr>').insertAfter(whoisElem.closest('tr'));
         },
         error: function(jqXHR, textStatus, errorThrown) {
@@ -126,14 +123,15 @@ $(document).on('click', '[data-whois]', function(e) {
     });
 });
 
+
 function requestAvailability() {
     if (!domains.length) {
         stop();
-
+        console.log('domain length' + domains.length)
         return true;
     } if (isPaused) {
         pause();
-
+        console.log('pause')
         return true;
     } else if (typeof(Storage) !== "undefined" && localStorage.getItem(domains[domains.length-1])) {
         $('#checking span').html(domains[domains.length-1]);
@@ -152,15 +150,14 @@ function requestAvailability() {
 
         return true;
     }
-
     $('#checking span').html(domains[domains.length-1]);
-
     $.ajax({
         url: "",
         type: "post",
         data: "domain=" + domains[domains.length-1],
         timeout: 7000,
         success: function(res) {
+            console.log(res)
             writeTable(res, window.location.hostname);
 
             if ($('input[name=cache][value=1]:checked').length && typeof(Storage) !== "undefined") {
@@ -453,7 +450,6 @@ function isValidLength(domain) {
 }
 
 (function(root) {
-
     function isValidDomain(v, opts) {
         if (typeof v !== 'string') return false
         if (!(opts instanceof Object)) opts = {}

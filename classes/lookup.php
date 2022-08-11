@@ -113,7 +113,7 @@ class Lookup
             !self::isValidJson(file_get_contents($servers))
         )
             $this->servers = dirname(dirname(__FILE__)) .
-                "/vendor/helgesverre/domain-availability/src/data/servers.json";
+                "/servers.json";
         else
             $this->servers = $servers;
 
@@ -185,8 +185,8 @@ class Lookup
     public static function htmlOptions($servers = null)
     {
         if (empty($servers))
-            $servers = dirname(dirname(__FILE__)) .
-                "/vendor/helgesverre/domain-availability/src/data/servers.json";
+            $servers = file_get_contents('/misc/servers/servers.json');
+
 
         if (self::isValidJson($json = file_get_contents($servers))) {
             $html = '';

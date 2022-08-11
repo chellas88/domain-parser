@@ -13,7 +13,7 @@
   },
   "org": {
     "server": "whois.pir.org",
-    "not_found": "NOT FOUND"
+    "not_found": "Domain not found."
   },
   "io": {
     "server": "whois.nic.io",
