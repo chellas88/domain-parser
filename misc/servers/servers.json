@@ -9,7 +9,7 @@
     },
     "in.ua": {
         "server": "whois.ua",
-        "not_found": "No entries found for"
+        "not_found": "Domain name does not exist"
     },
     "net": {
         "server": "whois.verisign-grs.com",
@@ -109,7 +109,7 @@
     },
     "be": {
         "server": "whois.dns.be",
-        "not_found": "Status: AVAILABLE"
+        "not_found": "AVAILABLE"
     },
     "berlin": {
         "server": "whois.nic.berlin",
@@ -117,7 +117,7 @@
     },
     "bg": {
         "server": "whois.register.bg",
-        "not_found": "does not exist in database!"
+        "not_found": "registration status: available"
     },
     "bi": {
         "server": "whois1.nic.bi",
@@ -129,11 +129,11 @@
     },
     "biz": {
         "server": "whois.biz",
-        "not_found": "Not found: "
+        "not_found": "No Data Found"
     },
     "bj": {
         "server": "whois.nic.bj",
-        "not_found": "No records matching"
+        "not_found": "Domain Status: No Object Found"
     },
     "blackfriday": {
         "server": "whois.uniregistry.net",
@@ -165,7 +165,7 @@
     },
     "ca": {
         "server": "whois.cira.ca",
-        "not_found": "Domain status:         available"
+        "not_found": "Not found:"
     },
     "cab": {
         "server": "whois.donuts.co",
@@ -209,15 +209,15 @@
     },
     "ceo": {
         "server": "whois.nic.ceo",
-        "not_found": "Not found:"
+        "not_found": "DOMAIN NOT FOUND"
     },
     "cf": {
         "server": "whois.dot.cf",
-        "not_found": "Invalid query or domain name not known in Dot CF Domain Registry"
+        "not_found": "is not known"
     },
     "ch": {
         "server": "whois.nic.ch",
-        "not_found": "We do not have an entry in our database matching your query."
+        "not_found": "are not permitted"
     },
     "cheap": {
         "server": "whois.donuts.co",
@@ -229,11 +229,11 @@
     },
     "ci": {
         "server": "whois.nic.ci",
-        "not_found": "not found"
+        "not_found": "No Object Found"
     },
     "cl": {
         "server": "whois.nic.cl",
-        "not_found": ": no existe"
+        "not_found": "no entries found."
     },
     "cleaning": {
         "server": "whois.donuts.co",
@@ -245,15 +245,15 @@
     },
     "club": {
         "server": "whois.nic.club",
-        "not_found": "Not found:"
+        "not_found": "No Data Found"
     },
     "cn": {
         "server": "whois.cnnic.cn",
-        "not_found": "no matching record."
+        "not_found": "No matching record."
     },
     "co": {
         "server": "whois.nic.co",
-        "not_found": "Not found:"
+        "not_found": "No Data Found"
     },
     "codes": {
         "server": "whois.donuts.co",
@@ -297,7 +297,7 @@
     },
     "coop": {
         "server": "whois.nic.coop",
-        "not_found": "No domain records were found to match"
+        "not_found": "DOMAIN NOT FOUND"
     },
     "country": {
         "server": "whois-dub.mm-registry.com",
@@ -345,7 +345,7 @@
     },
     "dm": {
         "server": "whois.nic.dm",
-        "not_found": "not found..."
+        "not_found": "is available for registration"
     },
     "domains": {
         "server": "whois.donuts.co",
@@ -361,7 +361,7 @@
     },
     "edu": {
         "server": "whois.educause.edu",
-        "not_found": "No Match"
+        "not_found": "NO MATCH:"
     },
     "education": {
         "server": "whois.donuts.co",
@@ -369,7 +369,7 @@
     },
     "ee": {
         "server": "whois.tld.ee",
-        "not_found": "No entries found."
+        "not_found": "Domain not found"
     },
     "email": {
         "server": "whois.donuts.co",
